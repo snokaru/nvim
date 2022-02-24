@@ -48,6 +48,9 @@ return packer.startup(function(use)
   use "windwp/nvim-ts-autotag" -- Auto change tags
   use "numToStr/Comment.nvim" -- Easily comment stuff
 
+  use 'kyazdani42/nvim-web-devicons'
+  use 'kyazdani42/nvim-tree.lua'
+
   -- Colorschemes
   use "lunarvim/colorschemes"
   use "folke/tokyonight.nvim"
@@ -78,6 +81,9 @@ return packer.startup(function(use)
   use "nvim-treesitter/playground"
   use 'JoosepAlviste/nvim-ts-context-commentstring'
 
+  -- Git
+  use "lewis6991/gitsigns.nvim"
+  use "tpope/vim-fugitive"
 
 
   -- Automatically set up your configuration after cloning packer.nvim
