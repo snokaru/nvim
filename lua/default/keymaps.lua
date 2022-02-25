@@ -16,7 +16,7 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- explorer
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- resizing with arrows (doesn't work on mac)
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
