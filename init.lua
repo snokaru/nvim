@@ -13,4 +13,5 @@ require "default.gitsigns"
 require "default.nvim-tree"
 require "default.bufferline"
 require "default.lualine"
+require "default.toggleterm"
 

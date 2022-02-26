@@ -53,4 +53,4 @@ keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 -- null-ls formatting
-keymap("n", "<leader>f", ":Format<CR>", opts)
+keymap("n", "<leader>t", ":Format<CR>", opts)
