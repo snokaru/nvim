@@ -47,6 +47,8 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "windwp/nvim-ts-autotag" -- Auto change tags
   use "numToStr/Comment.nvim" -- Easily comment stuff
+  use "akinsho/bufferline.nvim"
+  use "moll/vim-bbye"
 
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
@@ -72,6 +74,9 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+
+  -- Telescope
+  use "nvim-telescope/telescope.nvim"
 
   -- TreeSitter
   use {
