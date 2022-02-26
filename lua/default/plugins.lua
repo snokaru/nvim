@@ -47,11 +47,18 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "windwp/nvim-ts-autotag" -- Auto change tags
   use "numToStr/Comment.nvim" -- Easily comment stuff
+
+
+  -- Bufferline
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
 
+  -- Nvim Tree
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
+
+  -- Lualine
+  use 'nvim-lualine/lualine.nvim'
 
   -- Colorschemes
   use "lunarvim/colorschemes"
