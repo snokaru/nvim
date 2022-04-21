@@ -14,4 +14,7 @@ require "default.nvim-tree"
 require "default.bufferline"
 require "default.lualine"
 require "default.toggleterm"
+require "default.project"
+require "default.indentline"
+require "default.alpha"
 

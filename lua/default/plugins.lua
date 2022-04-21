@@ -64,6 +64,15 @@ return packer.startup(function(use)
 	use("folke/tokyonight.nvim")
 	use("ellisonleao/gruvbox.nvim")
 
+  -- Better load times
+  use("lewis6991/impatient.nvim")
+
+  -- indentation lines
+  use("lukas-reineke/indent-blankline.nvim")
+
+  -- greeter
+  use("goolord/alpha-nvim")
+
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
 	use("hrsh7th/cmp-buffer") -- buffer completions
@@ -98,6 +107,9 @@ return packer.startup(function(use)
 	-- Git
 	use("lewis6991/gitsigns.nvim")
 	use("tpope/vim-fugitive")
+
+  -- Project
+  use("ahmedkhalf/project.nvim")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
