@@ -16,6 +16,9 @@ null_ls.setup {
     -- formatting.yapf,
     formatting.stylua,
     diagnostics.flake8,
+    diagnostics.mypy.with({
+      extra_args = {"--ignore-missing-imports"}
+    }),
   },
 }
 
