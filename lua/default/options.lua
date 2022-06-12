@@ -35,10 +35,24 @@ local options = {
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
 }
 
+local g = {
+  tex_flavor = 'latex',
+  vimtex_view_methods = 'skim',
+  vimtex_view_skim_sync = 1,
+  vimtex_view_skim_activate = 1,
+  vimtex_compiler_latexmk = {
+    build_dir = 'build',
+  },
+}
+
 vim.opt.shortmess:append "c"
 
 for k, v in pairs(options) do
   vim.opt[k] = v
+end
+
+for k, v in pairs(g) do
+  vim.g[k] = v
 end
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"
