@@ -8,8 +8,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
 		"clone",
 		"--depth",
 		"1",
-		"https://github.com/wbthomason/packer.nvim",
-		install_path,
+		"https://github.com/wbthomason/packer.nvim", install_path,
 	})
 	print("Installing packer close and reopen Neovim...")
 	vim.cmd([[packadd packer.nvim]])
@@ -64,14 +63,14 @@ return packer.startup(function(use)
 	use("folke/tokyonight.nvim")
 	use("ellisonleao/gruvbox.nvim")
 
-  -- Better load times
-  use("lewis6991/impatient.nvim")
+	-- Better load times
+	use("lewis6991/impatient.nvim")
 
-  -- indentation lines
-  use("lukas-reineke/indent-blankline.nvim")
+	-- indentation lines
+	use("lukas-reineke/indent-blankline.nvim")
 
-  -- greeter
-  use("goolord/alpha-nvim")
+	-- greeter
+	use("goolord/alpha-nvim")
 
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
@@ -108,17 +107,20 @@ return packer.startup(function(use)
 	use("lewis6991/gitsigns.nvim")
 	use("tpope/vim-fugitive")
 
-  -- Project
-  use("ahmedkhalf/project.nvim")
+	-- Project
+	use("ahmedkhalf/project.nvim")
 
-  -- tmux navigation
-  use('christoomey/vim-tmux-navigator')
+	-- tmux navigation
+	use('christoomey/vim-tmux-navigator')
 
-  -- latex
-  use('lervag/vimtex')
+	-- latex
+	use('lervag/vimtex')
 
-  -- auto-detect indent level
-  use('tpope/vim-sleuth')
+	-- auto-detect indent level
+	use('tpope/vim-sleuth')
+
+	-- emacs-like which key
+	use "folke/which-key.nvim"
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

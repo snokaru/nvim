@@ -19,10 +19,10 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- resizing with arrows (doesn't work on mac)
-keymap("n", "<C-Up>", ":resize +2<CR>", opts)
-keymap("n", "<C-Down>", ":resize -2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<A-k>", ":resize +2<CR>", opts)
+keymap("n", "<A-j>", ":resize -2<CR>", opts)
+keymap("n", "<A-h>", ":vertical resize -2<CR>", opts)
+keymap("n", "<A-l>", ":vertical resize +2<CR>", opts)
 
 -- navigating buffers with shift
 keymap("n", "<S-l>", ":bnext<CR>", opts)
@@ -47,10 +47,3 @@ keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
-
--- telescope keymaps
-keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
-keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
-
--- null-ls formatting
-keymap("n", "<leader>t", ":Format<CR>", opts)

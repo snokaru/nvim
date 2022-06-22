@@ -19,6 +19,7 @@ null_ls.setup {
     diagnostics.mypy.with({
       extra_args = {"--ignore-missing-imports"}
     }),
+    diagnostics.cppcheck,
   },
 }
 
