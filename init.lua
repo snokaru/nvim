@@ -18,4 +18,4 @@ require "default.project"
 require "default.indentline"
 require "default.alpha"
 require "default.whichkey"
-
+require "default.transparent"

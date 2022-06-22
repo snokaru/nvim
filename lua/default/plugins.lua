@@ -121,6 +121,9 @@ return packer.startup(function(use)
 
 	-- emacs-like which key
 	use "folke/which-key.nvim"
+	
+	-- add background transparency
+	use("xiyaowong/nvim-transparent")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
